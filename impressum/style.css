@@ -1,0 +1,62 @@
+html{
+    font-size: 18px;
+}
+
+h1 {
+    text-align: left;
+    color: #000000;
+    /* flex-wrap: wrap; */
+    font-size:5rem;
+}
+
+p {
+    font-size: 3rem;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+}
+
+button {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 2px solid #000000;;
+    padding: 30px 60px;
+    background: none;
+    font-size: 300%;
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+}
+
+.buttonContainer {
+    margin-top: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: none;
+    border: 2px solid #000000;;
+}
+
+.buttonContainer button {
+    margin-top: 0;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: none;
+    background: none;
+    padding: 30px 60px;
+    font-size: 300%;
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+}
+
+a {
+    color: #ff7b00;
+    text-decoration: none;
+}
