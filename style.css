@@ -29,8 +29,8 @@ body{
 
 img{
     transition: opacity 0.5s ease-in-out;
-    max-width: 100%;
-    height: auto;
+    max-width: auto;
+    max-height: auto;
 }
 
 #imageContainer img.show {
