@@ -7,17 +7,17 @@ let label = 'listening...';
 // Teachable Machine model URL:
 let soundModel = 'https://teachablemachine.withgoogle.com/models/qz8yxVBHU/';
 
-const initialImagePath = '/assets/bulb.png';
+const initialImagePath = 'assets/bulb.png';
 
 const imagePaths = {
     // Hintergrundgeräusche: '/assets/bulb.png',
-    C: '/assets/bulb1.png',
-    D: '/assets/bulb2.png',
-    E: '/assets/bulb3.png',
-    F: '/assets/bulb4.png',
-    G: '/assets/bulb5.png',
-    A: '/assets/bulb6.png',
-    H: '/assets/bulb7.png',
+    C: 'assets/bulb1.png',
+    D: 'assets/bulb2.png',
+    E: 'assets/bulb3.png',
+    F: 'assets/bulb4.png',
+    G: 'assets/bulb5.png',
+    A: 'assets/bulb6.png',
+    H: 'assets/bulb7.png',
 }
 
 function showImageForClass(label){

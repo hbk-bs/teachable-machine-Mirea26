@@ -1,23 +1,49 @@
+*{
+    box-sizing: border-box;
+    font-weight: normal;
+    gap: 1rem;
+  }
+
 html{
     font-size: 18px;
-}
-
-h1 {
-    text-align: left;
-    color: #000000;
-    font-size:5rem;
-}
-
-p {
-    font-size: 3rem;
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
 }
 
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
+    width: 80vw;
     height: 100vh;
-    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+    gap: 1rem;
+    max-width: 1024px;
+  }
+
+h1 {
+    text-align: center;
+    color: #000000;
+    font-size:5rem;
+    flex-wrap: wrap;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    align-self: flex-start;
+}
+
+span{
+    color: #ff7b00;
 }
 
 #imageContainer  {
@@ -26,11 +52,12 @@ body{
     align-items: center;
     max-width: 100%;
     height: auto;
+    flex-wrap: wrap;
 }
 
 #imageContainer img{
     transition: opacity 0.5s ease-in-out;
-    max-width: 100%;
+    width: 20vw;
     height: auto;
 }
 
@@ -38,38 +65,51 @@ body{
     opacity: 1;
 }
 
-button {
+.micro {
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    border: 2px solid #000000;;
     padding: 30px 60px;
     background: none;
-    font-size: 6rem;
-    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+    border: none;
+    width: 60vw;
+    height: auto;
+    
 }
 
-.buttonContainer {
-    margin-top: 20%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background: none;
-    border: 2px solid #000000;;
-}
-
-.buttonContainer button {
+#button {
     margin-top: 0;
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
     border: none;
     background: none;
-    padding: 30px 60px;
-    font-size: 4rem;
-    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+    padding: 40px 80px;
+    width: 100%;
+    flex-direction: row;
+    font-size: 1.5rem;
+}
+
+#button2 {
+    margin-top: 0;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: none;
+    background: none;
+    padding: 40px 80px;
+    font-size: 1.5rem;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
 }
 
 a {
@@ -77,6 +117,32 @@ a {
     text-decoration: none;
 }
 
-span {
-    color: #ff7b00; 
-}
+@media screen and (max-width: 768px) {
+    main {
+      width: 90vw;
+    }
+    .locations-container {
+      flex-direction: column;
+    }
+    .facts {
+      width: 100%;
+    }
+  
+    .column{
+      align-items: center;
+      flex-wrap: wrap;
+      display: flex;
+    }
+    
+    #imageContainer{
+        align-items: center;
+        width: 100%;
+    }
+
+    .micro{
+        align-items: center;
+        width: 20vw;
+        flex-wrap: wrap;
+        display: flex;
+    }
+  }

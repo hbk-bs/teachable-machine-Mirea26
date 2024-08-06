@@ -12,7 +12,8 @@
 
 	<body>
 		
-        <div><h1>LightBulb</h1></div>
+    <div><h1>LightBulb</h1></div>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
         <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
@@ -20,12 +21,17 @@
 		<script src="sketch.js"></script>
 
     <div id="imageContainer">
-    <img id="startImage" src="/assets/bulb.png" alt="Bild">
+    <img id="startImage" src="assets/bulb.png" alt="Bild">
     </div>
+
+    <div id="button" class="micro">
     <button id="microButton" onclick="micro()">Mikrofon an</button>
-    <div class="buttonContainer">
-        <button ><a href="/info/index.html">Was muss ich tun?</a></button>
-        <button ><a href="/impressum/index.html">Impressum</a></button>
+    </div>  
+
+    <div id="button2" class="row">
+        <button ><a href="info/index.html">Was muss ich tun?</a></button>
+        <button ><a href="impressum/index.html">Impressum</a></button>
     </div>
+
 	</body>
 </html>

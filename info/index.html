@@ -11,21 +11,28 @@
 </head>
 <body>
     <div><h1>LightBulb</h1></div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
     <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
     <script type="text/javascript"></script>
     <script src="sketch.js"></script>
 
-<div id="imageContainer">
-<img id="startImage" src="/assets/bulb.png" alt="Bild">
-</div>
-<button id="microButton" onclick="micro()">Mikrofon an</button>
+    <div id="imageContainer">
+    <img id="startImage" src="/assets/bulb.png" alt="Bild">
+    </div>
+
+    <div id="button" class="micro">
+    <button id="microButton" onclick="micro()">Mikrofon an</button>
+    </div>  
+
     <p> <span>Singe</span>, um die Glühbirne zum Leuchten zu bringen. Je 
         <span>höher</span> der Ton, desto <span>heller</span> das Licht!</p>
-    <div class="buttonContainer">
+
+    <div id="button2" class="row">
         <button ><a href="/index.html">Startseite</a></button>
         <button ><a href="/impressum/index.html">Impressum</a></button>
     </div>
+
 </body>
 </html>
