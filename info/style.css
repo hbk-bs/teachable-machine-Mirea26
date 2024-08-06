@@ -39,7 +39,8 @@ h1 {
 p {
     text-align: center;
     font-size: 1rem;
-    align-self: flex-start;
+    align-self: center;
+    margin: 0 auto;
 }
 
 span{
